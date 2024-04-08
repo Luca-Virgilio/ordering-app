@@ -1,4 +1,7 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "jsxSingleQuote": true,
+  "parser": "typescript",
+  "trailingComma": "all",
+  "endOfLine": "auto"
 }
