@@ -4,6 +4,15 @@ First microservice project with nestjs. This project is a ordering app for a res
 
 based on yt video: https://www.youtube.com/watch?v=yuVVKB0EaOQ
 
+## Run on containers
+For run all services and the database on containers, you need to have docker and docker-compose installed on your machine. After use the command:
+```bash
+$ docker-compose up
+```
+If you want to rebuild the images, for example to load new dependecies, use the command:
+```bash
+$ docker-compose up --build -V
+```
 ## Installation
 
 ```bash
