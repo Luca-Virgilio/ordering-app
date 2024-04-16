@@ -16,13 +16,16 @@ dependencies:
     version: 10.3.7(@nestjs/common@10.3.7)(@nestjs/platform-express@10.3.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
   '@nestjs/mongoose':
     specifier: ^10.0.5
-    version: 10.0.5(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(mongoose@8.3.0)(rxjs@7.8.1)
+    version: 10.0.5(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(mongoose@8.3.2)(rxjs@7.8.1)
   '@nestjs/platform-express':
     specifier: ^10.0.0
     version: 10.3.7(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)
   joi:
     specifier: ^17.12.3
     version: 17.12.3
+  mongoose:
+    specifier: ^8.3.2
+    version: 8.3.2
   reflect-metadata:
     specifier: ^0.2.0
     version: 0.2.2
@@ -975,7 +978,7 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@nestjs/mongoose@10.0.5(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(mongoose@8.3.0)(rxjs@7.8.1):
+  /@nestjs/mongoose@10.0.5(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(mongoose@8.3.2)(rxjs@7.8.1):
     resolution: {integrity: sha512-P5vwsT1RiL1+nGXfVMLMnqowkKy/azecSkAlE/0GBjoRJd7diJIJTVgOKCDysIQFtG1qinT3yXhusS1IM2jWBw==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -985,7 +988,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.3.7(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.7(@nestjs/common@10.3.7)(@nestjs/platform-express@10.3.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      mongoose: 8.3.0
+      mongoose: 8.3.2
       rxjs: 7.8.1
     dev: false
 
@@ -3768,8 +3771,8 @@ packages:
       graceful-fs: 4.2.11
     dev: true
 
-  /kareem@2.6.0:
-    resolution: {integrity: sha512-B9wwgyKKKZkxYZXQzefvb/Ykh9eHixxR+ttTP2c/Pq8NvHi1iYIAImf3nj/DXkPcnenjGEffhPWXnCFRIbNAhw==}
+  /kareem@2.6.3:
+    resolution: {integrity: sha512-C3iHfuGUXK2u8/ipq9LfjFfXFxAZMQJJq7vLS45r3D9Y2xQ/m4S8zaR4zMLFWh9AsNPXmcFfUDhTEO8UIC/V6Q==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -4031,12 +4034,12 @@ packages:
       mongodb-connection-string-url: 3.0.0
     dev: false
 
-  /mongoose@8.3.0:
-    resolution: {integrity: sha512-Y5QNnuA38CEin8hnA+q//nUVztIi4Xklu9xlmbkd1KdWHnIlemSwf5IL/evcI+e2zplL4g5Y6PMkO+nPSAnIdA==}
+  /mongoose@8.3.2:
+    resolution: {integrity: sha512-3JcpDjFI25cF/3xpu+4+9nM0lURQTNLcP86X83+LvuICdn453QQLmhSrUr2IPM/ffLiDE9KPl9slNb2s0hZPpg==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.6.0
-      kareem: 2.6.0
+      kareem: 2.6.3
       mongodb: 6.5.0
       mpath: 0.9.0
       mquery: 5.0.0
